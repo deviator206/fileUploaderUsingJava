@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>deviator-zip-uploader</title>
+<link rel="stylesheet" href="js/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</head>
+<body ng-app="deviatorLabs">
+	<div class="container">
+		<h1>Code Uploader</h1>
+		<br /> <br />
+
+		<div class="lead">Once your code is ready, you need to compress
+			into a ZIP file.Name it with your FirstName_LastName_Phone.zip</div>
+		<br /> <br />
+		<form method="POST" action="rest/upload"
+			enctype="multipart/form-data">
+			<input class="row" type="file" name="file" /><br /> <input class="row" type="submit"
+				value="Upload the Code" />
+		</form>
+
+	</div>
+
+
+
+
+
+</body>
+</html>
